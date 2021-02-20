@@ -2,6 +2,3 @@ test
 test
 333
 
--- feature F
-
--- fix bug
