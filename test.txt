@@ -2,6 +2,6 @@ test
 test
 333
 
--- feature A
+-- feature B
 
 -- fix bug
