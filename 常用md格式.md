@@ -1,3 +1,10 @@
+title: 常用 markdown 格式
+date: 2021-02-23 21:15:33
+categories: Web
+
+tags: markdown
+---
+
 #### 常用格式
 
 ##### 标题
@@ -19,8 +26,8 @@
 - Microsoft
 - Google
 - Apple
-	- iPhone
-	- iPad
+  - iPhone
+  - iPad
 ```
 
 - 有序列表
@@ -97,25 +104,19 @@
 
 ##### 代码格式
 
-以````语言`开头
-
-以````结束`。
+以 \`\`\`语言 开头，以 \`\`\` 结束。
 
 ```java
-​```java
 public static void main(String[] args) {
-		System.out.println("hello world")
+    System.out.println("hello world");
 }
-​```
 ```
 
 ```xml
-​```xml
 <html>
-	<head><title>百度一下</title></head>
-  <body></body>
+    <head><title>百度一下</title></head>
+    <body></body>
 </html>
-​```
 ```
 
 
@@ -127,8 +128,8 @@ public static void main(String[] args) {
 - Microsoft
 - Google
 - Apple
-	- iPhone
-	- iPad
+  - iPhone
+  - iPad
 
 
 
@@ -137,10 +138,8 @@ public static void main(String[] args) {
 3. Apple
 
 
-
 `反引号包围的内容`会高亮显示。
 ``嵌套的话，可以使用`两个双引号`嵌套在外面``
-
 
 
 > 引用内容
@@ -169,7 +168,7 @@ public static void main(String[] args) {
 
 ```java
 public static void main(String[] args) {
-		System.out.println("hello world")
+    System.out.println("hello world");
 }
 ```
 
