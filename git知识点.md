@@ -365,3 +365,37 @@ git cherry-pick commit-id
 git cherry-pick --continue
 ```
 
+
+
+---
+
+#### 实践
+
+##### 1. 配置用户信息
+
+```shell
+git config --global user.name "name"
+git config --global user.email mail@example.com
+```
+
+##### 2. git 命令
+
+```shell
+git clone https://xxxx  或者 ssh://xxxx  # 第一次 
+
+git add .
+// 提交到本地
+git commit -m "commit 记录"
+// 提交
+git push # 第一次如果失败：  git push -u origin master
+```
+
+##### 3. ssh 免密配置
+
+```shell
+ssh-keygen -t rsa
+```
+> 建议 RSA 存储在`默认路径`，且`密码为空`直接回车。
+
+把 `id_rsa.pub` 内容 添加到 SSH keys 里。设置路径：个人头像 - setting - ssh keys
+
