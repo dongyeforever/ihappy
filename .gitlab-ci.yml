@@ -1,0 +1,33 @@
+stages:
+  - build
+  - test
+  - deploy
+ 
+
+before_script:
+  - echo "Restoring Packages..."
+
+build_job:
+  stage: build
+  tags:
+    - build
+  only:
+    - master
+  script:
+    - echo "Release build..."
+    - echo "mvn clean "
+    - echo "mvn install"
+
+test_job:
+  stage: test
+  script:
+    - echo "Tests run..."
+
+deploy_job:
+  stage: deploy
+  tags:
+    - deploy
+  only:
+    - master
+  script:
+    - echo "hello deploy"
