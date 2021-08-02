@@ -399,3 +399,19 @@ ssh-keygen -t rsa
 
 把 `id_rsa.pub` 内容 添加到 SSH keys 里。设置路径：个人头像 - setting - ssh keys
 
+##### 4.同一台电脑可以有2个git账号
+修改配置文件`.ssh/config`。
+
+```shell
+  1 # douban
+  2     Host github-fm.intra.douban.com
+  3     HostName github-fm.intra.douban.com
+  4     PreferredAuthentications publickey
+  5     IdentityFile ~/.ssh/id_rsa_douban
+  6
+  7 # github
+  8     Host github.com
+  9     HostName github.com
+ 10     PreferredAuthentications publickey
+ 11     IdentityFile ~/.ssh/id_rsa
+ ```
