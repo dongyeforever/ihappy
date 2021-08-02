@@ -405,7 +405,7 @@ ssh-keygen -t rsa
 ```shell
   1 # douban
   2     Host github-fm.intra.douban.com
-  3     HostName github-fm.intra.douban.com
+  3     HostName github.douban.com
   4     PreferredAuthentications publickey
   5     IdentityFile ~/.ssh/id_rsa_douban
   6
